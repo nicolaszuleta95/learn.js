@@ -34,3 +34,19 @@ function addDogs() {
 }
 
 addDogs();
+
+const arrAdoptados = array.filter(function (element) {
+  return element.adoptionStatus === "adoptado";
+});
+
+const arrEnProceso = array.filter(function (element) {
+  return element.adoptionStatus === "en proceso";
+});
+
+const arrEnAdopcion = array.filter(function (element) {
+  return element.adoptionStatus === "en adopcion";
+});
+
+console.log(arrEnAdopcion);
+console.log(arrEnProceso);
+console.log(arrAdoptados);
