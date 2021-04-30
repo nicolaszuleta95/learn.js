@@ -1,0 +1,9 @@
+.redborder {
+  border: solid 1px red;
+}
+
+.img-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
