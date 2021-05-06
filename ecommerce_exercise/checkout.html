@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./checkout.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <form class="datos" action="">
+      <h2>1. Datos Personales</h2>
+      <label for="name">Nombre Completo:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="dir">Direccion:</label><br />
+      <input type="text" id="dir" name="dir" /><br /><br />
+      <label for="dir">Telefono:</label><br />
+      <input type="text" id="tel" name="tel" /><br /><br />
+      <label for="dir">E-mail:</label><br />
+      <input type="text" id="email" name="email" /><br /><br />
+      <p>¿Retirar o enviar a direccion?:</p>
+      <input type="radio" id="retiro" name="send" value="retiro" />
+      <label for="debito">Retiro</label><br />
+      <input type="radio" id="envio" name="send" value="envio" />
+      <label for="credito">Enviar a direccion</label><br />
+    </form>
+    <button class="btn">Enviar</button>
+
+    <form class="pagos hide">
+      <h2>2. Datos de Pago</h2>
+      <p>Seleccione su medio de pago:</p>
+      <input type="radio" id="debito" name="tarjeta" value="debito" />
+      <label for="debito">Debito</label><br />
+      <input type="radio" id="credito" name="tarjeta" value="credito" />
+      <label for="credito">Credito</label><br />
+      <label for="code">Codigo:</label><br />
+      <input type="text" id="code" name="code" /><br /><br />
+      <input type="submit" class="finalizar" value="Finalizar Compra" />
+    </form>
+
+    <script src="./checkout.js"></script>
+  </body>
+</html>
