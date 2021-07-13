@@ -1,0 +1,15 @@
+let s = Number(123);
+//let s = "123";
+function reverseString(s) {
+  try {
+    var splitString = s.split("");
+    var reverseArray = splitString.reverse();
+    var joinArray = reverseArray.join("");
+    console.log(joinArray);
+  } catch (error) {
+    console.log(error.message);
+    console.log(s);
+  }
+}
+
+reverseString(s);
